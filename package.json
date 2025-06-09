@@ -1,0 +1,20 @@
+{
+  "name": "jgmotors-crm",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "firebase": "^10.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "5.0.1",
+    "serve": "^14.2.0"
+  },
+  "scripts": {
+    "start": "serve -s build",
+    "build": "react-scripts build"
+  }
+}
