@@ -1,16 +1,19 @@
-import { initializeApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore';
-import { getAuth } from 'firebase/auth';
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: 'SUA_API_KEY',
-  authDomain: 'SUA_AUTH_DOMAIN',
-  projectId: 'jg-motors-crm',
-  storageBucket: 'jg-motors-crm.appspot.com',
-  messagingSenderId: 'SENDER_ID',
-  appId: 'APP_ID'
+  apiKey: "AIzaSyDpPENfwagrXub2AuosZpo2fCy3kQpzp9M",
+  authDomain: "jg-motors-crm.firebaseapp.com",
+  projectId: "jg-motors-crm",
+  storageBucket: "jg-motors-crm.firebasestorage.app",
+  messagingSenderId: "488627812693",
+  appId: "1:488627812693:web:6c14c9aaa9b2076d3d57dc",
+  measurementId: "G-YFCDX1HWYH"
 };
 
 const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
-export const auth = getAuth(app);
+const auth = getAuth(app);
+const db = getFirestore(app);
+
+export { auth, db };
